@@ -1,0 +1,177 @@
+
+@import '~antd-mobile/lib/style/themes/default.less';
+
+
+.detailPage{
+  padding-bottom: 50px;
+  .fixedFooter{
+    height: unset;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+    z-index: 10000;
+    clear: both;
+  }
+  .avater{
+    width: 100%;
+  }
+  .avaterMask {
+    padding: 10px 0;
+    img{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    span{
+      color: #2a2c33;
+      font-size: 0.8rem;
+      margin-left: 1rem;
+    }
+  }
+  .desc{
+    color: #aaa;
+    font-size: 0.8rem;
+    padding: 3px 3px;
+  }
+  .desccontent{
+    font-size: 0.8rem;
+    padding: 3px 3px;
+  }
+  .descNumber{
+    font-family: 'DINCondensed-Bold';
+  }
+  .smalldesc{
+    font-size: 0.5rem;
+    padding-right: 8px;
+  }
+  .content{
+    font-size: .9rem;
+    color: #2a2c33;
+    letter-spacing: 2px;
+    text-indent: 2rem;
+    text-align: justify;
+    line-height: 1.5rem;
+  }
+  .navContent{
+    figure{
+      margin: 0 auto;
+    }
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  /**
+  成员列表
+  */
+  .membersBox {
+    padding: 30px 4px 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left
+}
+
+.membersBox img {
+    width: 4rem!important;
+    height: 4rem;
+    border-radius: 50%;
+    background: #f0f0f0;
+    border: 1px solid #f0f0f0
+}
+
+.membersBox .membersDesc {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-left: 10px
+}
+
+.membersBox .name {
+    font-size: .9rem;
+    color: #333;
+    letter-spacing: 1px;
+    margin-bottom: 0
+}
+
+.membersBox .name,.membersBox .role {
+    font-family: PingFangSC-Medium;
+    line-height: 1.5rem
+}
+
+.membersBox .role {
+    font-size: .5rem;
+    color: #999;
+    letter-spacing: 0;
+    margin-left: 20px
+}
+
+.membersBox .background {
+    margin-top: 10px;
+    font-family: PingFangSC-Regular;
+    font-size: .5rem;
+    color: #2a2c33;
+    line-height: 1.5rem;
+    letter-spacing: 0
+}
+}
+
+/**
+* 支持页面 样式
+**/
+.suppertPage{
+ background: #f8f8f8;
+ h3{
+   color: #57ad68;
+   line-height: 1.5rem;
+   margin: 0px;
+ }
+ article{
+  line-height: 1.5rem;
+    font-size: .8rem;
+    color: #666;
+    word-break: break-all;
+    text-align: left;
+    text-indent: 1rem;
+ }
+ describe{
+  font-size: .7rem;
+  vertical-align: sub;
+ }
+}
+
+.buyPage{
+  background: #f8f8f8;
+  height: 100%;
+  .fixedFooter{
+    height: unset;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+    z-index: 10000;
+    clear: both;
+  }
+  :global{
+    .primary{
+      color: #5cb975;
+    }
+    .my-list{
+      .am-list-header{
+        text-align: left;
+        line-height: 1rem;
+        font-size: .8rem;
+      }
+  }
+  
+  }
+}

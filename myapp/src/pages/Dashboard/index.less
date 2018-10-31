@@ -1,0 +1,93 @@
+
+@import '~antd-mobile/lib/style/themes/default.less';
+
+/***
+* @首页样式
+**/
+.homePage{
+  :global{
+    .space-carousel{
+      background:  #ddd;
+    }
+  }
+
+  /**
+  内容展示页面
+  **/
+  .contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    :global{
+      .am-card.am-card-full::before{
+        height: 0;
+      }
+      .am-card-full{
+        width: 100%;
+        .am-card-body::before,.am-card-body::after{
+          height: 0;
+        }
+      }
+      .am-card-body{
+        padding-top:5px;
+        font-size: .8rem;
+        line-height: 1.5rem;
+        img{
+         box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.2);        
+        //  height: 90px;
+         width: 100%;
+        }
+      }
+    .title{
+      color: #999;
+      font-size: 12px;
+      line-height: 15px;
+      vertical-align: top;
+      padding: 0 5px;
+    }
+    .detail{
+      text-align: left;
+      color: #999;
+      line-height: 25px;
+      font-size: 14px;
+      text-indent: 2rem;
+    }
+    .description{
+      color:#999;
+      font-size: .5rem;
+    }
+    }
+
+  }
+}
+
+/**
+* @个人管理样式
+**/
+.minePage{
+
+  .header {
+    padding: 60px 10px 20px 15px;
+    position: relative;
+    background: rgba(0,0,0,.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.avaterMask {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+.headerText {
+  display: inline-block;
+  padding: 5px 0 0 15px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+}
+}
